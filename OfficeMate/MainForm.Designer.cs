@@ -30,6 +30,10 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.txtPhoneInternal = new System.Windows.Forms.MaskedTextBox();
+            this.txtPhonePersonal = new System.Windows.Forms.MaskedTextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnSearchContact = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.btnImportContacts = new System.Windows.Forms.Button();
             this.btnExportContacts = new System.Windows.Forms.Button();
@@ -51,10 +55,6 @@
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.btnSearchContact = new System.Windows.Forms.Button();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.txtPhonePersonal = new System.Windows.Forms.MaskedTextBox();
-            this.txtPhoneInternal = new System.Windows.Forms.MaskedTextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridContacts)).BeginInit();
@@ -104,6 +104,42 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Контакты";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // txtPhoneInternal
+            // 
+            this.txtPhoneInternal.Location = new System.Drawing.Point(9, 384);
+            this.txtPhoneInternal.Mask = "0000";
+            this.txtPhoneInternal.Name = "txtPhoneInternal";
+            this.txtPhoneInternal.Size = new System.Drawing.Size(203, 22);
+            this.txtPhoneInternal.TabIndex = 25;
+            // 
+            // txtPhonePersonal
+            // 
+            this.txtPhonePersonal.Location = new System.Drawing.Point(9, 340);
+            this.txtPhonePersonal.Mask = "+7 (000) 000-00-00";
+            this.txtPhonePersonal.Name = "txtPhonePersonal";
+            this.txtPhonePersonal.Size = new System.Drawing.Size(203, 22);
+            this.txtPhonePersonal.TabIndex = 24;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearch.Location = new System.Drawing.Point(412, 21);
+            this.txtSearch.Multiline = true;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(636, 31);
+            this.txtSearch.TabIndex = 23;
+            // 
+            // btnSearchContact
+            // 
+            this.btnSearchContact.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSearchContact.Location = new System.Drawing.Point(1054, 23);
+            this.btnSearchContact.Name = "btnSearchContact";
+            this.btnSearchContact.Size = new System.Drawing.Size(94, 30);
+            this.btnSearchContact.TabIndex = 22;
+            this.btnSearchContact.Text = "Поиск";
+            this.btnSearchContact.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -288,43 +324,10 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1156, 533);
+            this.tabPage2.Size = new System.Drawing.Size(1156, 516);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Задачи";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // btnSearchContact
-            // 
-            this.btnSearchContact.Location = new System.Drawing.Point(1054, 23);
-            this.btnSearchContact.Name = "btnSearchContact";
-            this.btnSearchContact.Size = new System.Drawing.Size(94, 30);
-            this.btnSearchContact.TabIndex = 22;
-            this.btnSearchContact.Text = "Поиск";
-            this.btnSearchContact.UseVisualStyleBackColor = true;
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Location = new System.Drawing.Point(412, 21);
-            this.txtSearch.Multiline = true;
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(636, 31);
-            this.txtSearch.TabIndex = 23;
-            // 
-            // txtPhonePersonal
-            // 
-            this.txtPhonePersonal.Location = new System.Drawing.Point(9, 340);
-            this.txtPhonePersonal.Mask = "+7 (000) 000-00-00";
-            this.txtPhonePersonal.Name = "txtPhonePersonal";
-            this.txtPhonePersonal.Size = new System.Drawing.Size(203, 22);
-            this.txtPhonePersonal.TabIndex = 24;
-            // 
-            // txtPhoneInternal
-            // 
-            this.txtPhoneInternal.Location = new System.Drawing.Point(9, 384);
-            this.txtPhoneInternal.Mask = "0000";
-            this.txtPhoneInternal.Name = "txtPhoneInternal";
-            this.txtPhoneInternal.Size = new System.Drawing.Size(203, 22);
-            this.txtPhoneInternal.TabIndex = 25;
             // 
             // MainForm
             // 

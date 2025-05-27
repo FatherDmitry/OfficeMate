@@ -8,15 +8,13 @@ namespace OfficeMate.Model
 {
     public class Contact
     {
-        public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string FirstName { get; set; }
         public string MiddleName { get; set; }
         public string Company { get; set; }
         public string Position { get; set; }
         public string Email { get; set; }
         public string PhonePersonal { get; set; }
         public string PhoneInternal { get; set; }
-
-        public string FullName => $"{LastName} {FirstName} {MiddleName}".Trim();
     }
 }

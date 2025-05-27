@@ -162,14 +162,10 @@ namespace OfficeMate
             string query = txtSearch.Text.ToLower();
 
             var filtered = contacts.Where(c =>
-                (c.FirstName?.ToLower().Contains(query) ?? false) ||
-                (c.LastName?.ToLower().Contains(query) ?? false) ||
-                (c.MiddleName?.ToLower().Contains(query) ?? false) ||
-                (c.Company?.ToLower().Contains(query) ?? false) ||
-                (c.Position?.ToLower().Contains(query) ?? false) ||
-                (c.Email?.ToLower().Contains(query) ?? false) ||
-                (c.PhonePersonal?.ToLower().Contains(query) ?? false) ||
-                (c.PhoneInternal?.ToLower().Contains(query) ?? false)
+                (c.FirstName?.ToLower().Contains(query) ?? false) || (c.LastName?.ToLower().Contains(query) ?? false) ||
+                (c.MiddleName?.ToLower().Contains(query) ?? false) || (c.Company?.ToLower().Contains(query) ?? false) ||
+                (c.Position?.ToLower().Contains(query) ?? false) || (c.Email?.ToLower().Contains(query) ?? false) ||
+                (c.PhonePersonal?.ToLower().Contains(query) ?? false) || (c.PhoneInternal?.ToLower().Contains(query) ?? false)
             ).ToList();
 
             dataGridContacts.DataSource = null;
