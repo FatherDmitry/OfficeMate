@@ -62,7 +62,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txtTaskTitle = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.dtpDueDate = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeDue = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
             this.btnAddTask = new System.Windows.Forms.Button();
             this.btnEditTask = new System.Windows.Forms.Button();
@@ -347,7 +347,7 @@
             this.tabTask.Controls.Add(this.btnEditTask);
             this.tabTask.Controls.Add(this.btnAddTask);
             this.tabTask.Controls.Add(this.label12);
-            this.tabTask.Controls.Add(this.dtpDueDate);
+            this.tabTask.Controls.Add(this.dateTimeDue);
             this.tabTask.Controls.Add(this.label11);
             this.tabTask.Controls.Add(this.cmbTaskStatus);
             this.tabTask.Controls.Add(this.txtTaskDescription);
@@ -417,17 +417,17 @@
             this.label9.TabIndex = 0;
             this.label9.Text = "Задача";
             // 
-            // dtpDueDate
+            // dateTimeDue
             // 
-            this.dtpDueDate.Location = new System.Drawing.Point(229, 274);
-            this.dtpDueDate.Name = "dtpDueDate";
-            this.dtpDueDate.Size = new System.Drawing.Size(192, 22);
-            this.dtpDueDate.TabIndex = 6;
+            this.dateTimeDue.Location = new System.Drawing.Point(211, 276);
+            this.dateTimeDue.Name = "dateTimeDue";
+            this.dateTimeDue.Size = new System.Drawing.Size(192, 22);
+            this.dateTimeDue.TabIndex = 6;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(226, 255);
+            this.label12.Location = new System.Drawing.Point(208, 255);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(122, 16);
             this.label12.TabIndex = 7;
@@ -444,7 +444,7 @@
             // 
             // btnEditTask
             // 
-            this.btnEditTask.Location = new System.Drawing.Point(118, 319);
+            this.btnEditTask.Location = new System.Drawing.Point(107, 319);
             this.btnEditTask.Name = "btnEditTask";
             this.btnEditTask.Size = new System.Drawing.Size(92, 34);
             this.btnEditTask.TabIndex = 9;
@@ -453,7 +453,7 @@
             // 
             // btnDeleteTask
             // 
-            this.btnDeleteTask.Location = new System.Drawing.Point(65, 359);
+            this.btnDeleteTask.Location = new System.Drawing.Point(54, 359);
             this.btnDeleteTask.Name = "btnDeleteTask";
             this.btnDeleteTask.Size = new System.Drawing.Size(92, 34);
             this.btnDeleteTask.TabIndex = 10;
@@ -495,7 +495,7 @@
             // 
             // calendarTask
             // 
-            this.calendarTask.Location = new System.Drawing.Point(229, 301);
+            this.calendarTask.Location = new System.Drawing.Point(211, 301);
             this.calendarTask.Name = "calendarTask";
             this.calendarTask.TabIndex = 14;
             // 
@@ -555,7 +555,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox cmbTaskStatus;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker dtpDueDate;
+        private System.Windows.Forms.DateTimePicker dateTimeDue;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button btnEditTask;
         private System.Windows.Forms.Button btnAddTask;

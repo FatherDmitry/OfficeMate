@@ -18,6 +18,9 @@ namespace OfficeMate
         // Подключение контроля кнопок во вкладке "Контакты"
         private ContactController contactController;
 
+        // Подключение контроля кнопок во вкладке "Задачи"
+        private TaskController taskController;
+
         public MainForm()
         {
 
@@ -45,6 +48,19 @@ namespace OfficeMate
 
             // Подключение загрузки формы
             this.Load += (s, e) => contactController.OnFormLoad();
+
+
+            taskController = new TaskController(
+                dataGridTasks,
+                txtTaskTitle,
+                txtTaskDescription,
+                cmbTaskStatus,
+                dateTimeDue,
+                txtSearchTask
+            );
+
+            // Подключение кнопки <Добавить задачу>
+            btnAddTask.Click += taskController.OnAddTask;
         }
 
     }
