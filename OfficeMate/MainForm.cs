@@ -49,7 +49,7 @@ namespace OfficeMate
             // Подключение загрузки формы
             this.Load += (s, e) => contactController.OnFormLoad();
 
-
+            /////////////////___tabTasks____/////////////////
             taskController = new TaskController(
                 dataGridTasks,
                 txtTaskTitle,
@@ -61,6 +61,21 @@ namespace OfficeMate
 
             // Подключение кнопки <Добавить задачу>
             btnAddTask.Click += taskController.OnAddTask;
+
+            // Подключение кнопки <Изменить задачу>
+            btnEditTask.Click += taskController.OnEditTask;
+
+            // Подключение двойного щелчка по строке таблицы
+            dataGridTasks.CellDoubleClick += taskController.OnTaskDoubleClick;
+
+            // Подключение кнопки <Удалить задачу>
+            btnDeleteTask.Click += taskController.OnDeleteTask;
+
+            // Подключение <Поиска задачи>
+            btnSearchTask.Click += taskController.OnSearchTask;
+
+            btnExportTasks.Click += taskController.OnExportTasks; // Подключение <Сохранить список задач>
+            btnImportTasks.Click += taskController.OnImportTasks; // Подключение <Обновить список задач>
         }
 
     }

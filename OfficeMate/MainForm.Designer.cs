@@ -71,6 +71,8 @@
             this.txtSearchTask = new System.Windows.Forms.TextBox();
             this.btnSearchTask = new System.Windows.Forms.Button();
             this.calendarTask = new System.Windows.Forms.MonthCalendar();
+            this.btnExportTasks = new System.Windows.Forms.Button();
+            this.btnImportTasks = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabContact.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridContacts)).BeginInit();
@@ -339,6 +341,8 @@
             // 
             // tabTask
             // 
+            this.tabTask.Controls.Add(this.btnImportTasks);
+            this.tabTask.Controls.Add(this.btnExportTasks);
             this.tabTask.Controls.Add(this.calendarTask);
             this.tabTask.Controls.Add(this.btnSearchTask);
             this.tabTask.Controls.Add(this.txtSearchTask);
@@ -499,6 +503,24 @@
             this.calendarTask.Name = "calendarTask";
             this.calendarTask.TabIndex = 14;
             // 
+            // btnExportTasks
+            // 
+            this.btnExportTasks.Location = new System.Drawing.Point(9, 413);
+            this.btnExportTasks.Name = "btnExportTasks";
+            this.btnExportTasks.Size = new System.Drawing.Size(92, 34);
+            this.btnExportTasks.TabIndex = 15;
+            this.btnExportTasks.Text = "Сохранить";
+            this.btnExportTasks.UseVisualStyleBackColor = true;
+            // 
+            // btnImportTasks
+            // 
+            this.btnImportTasks.Location = new System.Drawing.Point(107, 413);
+            this.btnImportTasks.Name = "btnImportTasks";
+            this.btnImportTasks.Size = new System.Drawing.Size(92, 34);
+            this.btnImportTasks.TabIndex = 16;
+            this.btnImportTasks.Text = "Обновить";
+            this.btnImportTasks.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -564,6 +586,8 @@
         private System.Windows.Forms.TextBox txtSearchTask;
         private System.Windows.Forms.Button btnSearchTask;
         private System.Windows.Forms.MonthCalendar calendarTask;
+        private System.Windows.Forms.Button btnExportTasks;
+        private System.Windows.Forms.Button btnImportTasks;
     }
 }
 
