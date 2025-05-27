@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabContact = new System.Windows.Forms.TabPage();
             this.txtPhoneInternal = new System.Windows.Forms.MaskedTextBox();
             this.txtPhonePersonal = new System.Windows.Forms.MaskedTextBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
@@ -55,56 +55,73 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabTask = new System.Windows.Forms.TabPage();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cmbTaskStatus = new System.Windows.Forms.ComboBox();
+            this.txtTaskDescription = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtTaskTitle = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.dtpDueDate = new System.Windows.Forms.DateTimePicker();
+            this.label12 = new System.Windows.Forms.Label();
+            this.btnAddTask = new System.Windows.Forms.Button();
+            this.btnEditTask = new System.Windows.Forms.Button();
+            this.btnDeleteTask = new System.Windows.Forms.Button();
+            this.dataGridTasks = new System.Windows.Forms.DataGridView();
+            this.txtSearchTask = new System.Windows.Forms.TextBox();
+            this.btnSearchTask = new System.Windows.Forms.Button();
+            this.calendarTask = new System.Windows.Forms.MonthCalendar();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.tabContact.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridContacts)).BeginInit();
+            this.tabTask.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridTasks)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabContact);
+            this.tabControl1.Controls.Add(this.tabTask);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1164, 545);
+            this.tabControl1.Size = new System.Drawing.Size(1112, 545);
             this.tabControl1.TabIndex = 0;
             // 
-            // tabPage1
+            // tabContact
             // 
-            this.tabPage1.Controls.Add(this.txtPhoneInternal);
-            this.tabPage1.Controls.Add(this.txtPhonePersonal);
-            this.tabPage1.Controls.Add(this.txtSearch);
-            this.tabPage1.Controls.Add(this.btnSearchContact);
-            this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.btnImportContacts);
-            this.tabPage1.Controls.Add(this.btnExportContacts);
-            this.tabPage1.Controls.Add(this.btnDeleteContact);
-            this.tabPage1.Controls.Add(this.btnEditContact);
-            this.tabPage1.Controls.Add(this.btnAddContact);
-            this.tabPage1.Controls.Add(this.dataGridContacts);
-            this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.txtEmail);
-            this.tabPage1.Controls.Add(this.label6);
-            this.tabPage1.Controls.Add(this.txtPosition);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.txtCompany);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.txtMiddleName);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.txtFirstName);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.txtLastName);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1156, 516);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Контакты";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabContact.Controls.Add(this.txtPhoneInternal);
+            this.tabContact.Controls.Add(this.txtPhonePersonal);
+            this.tabContact.Controls.Add(this.txtSearch);
+            this.tabContact.Controls.Add(this.btnSearchContact);
+            this.tabContact.Controls.Add(this.label8);
+            this.tabContact.Controls.Add(this.btnImportContacts);
+            this.tabContact.Controls.Add(this.btnExportContacts);
+            this.tabContact.Controls.Add(this.btnDeleteContact);
+            this.tabContact.Controls.Add(this.btnEditContact);
+            this.tabContact.Controls.Add(this.btnAddContact);
+            this.tabContact.Controls.Add(this.dataGridContacts);
+            this.tabContact.Controls.Add(this.label7);
+            this.tabContact.Controls.Add(this.txtEmail);
+            this.tabContact.Controls.Add(this.label6);
+            this.tabContact.Controls.Add(this.txtPosition);
+            this.tabContact.Controls.Add(this.label5);
+            this.tabContact.Controls.Add(this.txtCompany);
+            this.tabContact.Controls.Add(this.label4);
+            this.tabContact.Controls.Add(this.txtMiddleName);
+            this.tabContact.Controls.Add(this.label3);
+            this.tabContact.Controls.Add(this.txtFirstName);
+            this.tabContact.Controls.Add(this.label2);
+            this.tabContact.Controls.Add(this.txtLastName);
+            this.tabContact.Controls.Add(this.label1);
+            this.tabContact.Location = new System.Drawing.Point(4, 25);
+            this.tabContact.Name = "tabContact";
+            this.tabContact.Padding = new System.Windows.Forms.Padding(3);
+            this.tabContact.Size = new System.Drawing.Size(1104, 516);
+            this.tabContact.TabIndex = 0;
+            this.tabContact.Text = "Контакты";
+            this.tabContact.UseVisualStyleBackColor = true;
             // 
             // txtPhoneInternal
             // 
@@ -129,13 +146,13 @@
             this.txtSearch.Location = new System.Drawing.Point(412, 21);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(636, 31);
+            this.txtSearch.Size = new System.Drawing.Size(584, 31);
             this.txtSearch.TabIndex = 23;
             // 
             // btnSearchContact
             // 
             this.btnSearchContact.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSearchContact.Location = new System.Drawing.Point(1054, 23);
+            this.btnSearchContact.Location = new System.Drawing.Point(1002, 23);
             this.btnSearchContact.Name = "btnSearchContact";
             this.btnSearchContact.Size = new System.Drawing.Size(94, 30);
             this.btnSearchContact.TabIndex = 22;
@@ -206,7 +223,7 @@
             this.dataGridContacts.Name = "dataGridContacts";
             this.dataGridContacts.RowHeadersWidth = 51;
             this.dataGridContacts.RowTemplate.Height = 24;
-            this.dataGridContacts.Size = new System.Drawing.Size(920, 450);
+            this.dataGridContacts.Size = new System.Drawing.Size(868, 450);
             this.dataGridContacts.TabIndex = 14;
             // 
             // label7
@@ -320,30 +337,185 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Фамилия";
             // 
-            // tabPage2
+            // tabTask
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1156, 516);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Задачи";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabTask.Controls.Add(this.calendarTask);
+            this.tabTask.Controls.Add(this.btnSearchTask);
+            this.tabTask.Controls.Add(this.txtSearchTask);
+            this.tabTask.Controls.Add(this.dataGridTasks);
+            this.tabTask.Controls.Add(this.btnDeleteTask);
+            this.tabTask.Controls.Add(this.btnEditTask);
+            this.tabTask.Controls.Add(this.btnAddTask);
+            this.tabTask.Controls.Add(this.label12);
+            this.tabTask.Controls.Add(this.dtpDueDate);
+            this.tabTask.Controls.Add(this.label11);
+            this.tabTask.Controls.Add(this.cmbTaskStatus);
+            this.tabTask.Controls.Add(this.txtTaskDescription);
+            this.tabTask.Controls.Add(this.label10);
+            this.tabTask.Controls.Add(this.txtTaskTitle);
+            this.tabTask.Controls.Add(this.label9);
+            this.tabTask.Location = new System.Drawing.Point(4, 25);
+            this.tabTask.Name = "tabTask";
+            this.tabTask.Padding = new System.Windows.Forms.Padding(3);
+            this.tabTask.Size = new System.Drawing.Size(1104, 516);
+            this.tabTask.TabIndex = 1;
+            this.tabTask.Text = "Задачи";
+            this.tabTask.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 255);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(53, 16);
+            this.label11.TabIndex = 5;
+            this.label11.Text = "Статус";
+            // 
+            // cmbTaskStatus
+            // 
+            this.cmbTaskStatus.FormattingEnabled = true;
+            this.cmbTaskStatus.Items.AddRange(new object[] {
+            "Выполняется",
+            "Под вопросом",
+            "Завершено"});
+            this.cmbTaskStatus.Location = new System.Drawing.Point(9, 274);
+            this.cmbTaskStatus.Name = "cmbTaskStatus";
+            this.cmbTaskStatus.Size = new System.Drawing.Size(160, 24);
+            this.cmbTaskStatus.TabIndex = 4;
+            // 
+            // txtTaskDescription
+            // 
+            this.txtTaskDescription.Location = new System.Drawing.Point(9, 77);
+            this.txtTaskDescription.Multiline = true;
+            this.txtTaskDescription.Name = "txtTaskDescription";
+            this.txtTaskDescription.Size = new System.Drawing.Size(412, 175);
+            this.txtTaskDescription.TabIndex = 3;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 58);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(123, 16);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Описание задачи";
+            // 
+            // txtTaskTitle
+            // 
+            this.txtTaskTitle.Location = new System.Drawing.Point(9, 22);
+            this.txtTaskTitle.Multiline = true;
+            this.txtTaskTitle.Name = "txtTaskTitle";
+            this.txtTaskTitle.Size = new System.Drawing.Size(412, 33);
+            this.txtTaskTitle.TabIndex = 1;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 3);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(56, 16);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Задача";
+            // 
+            // dtpDueDate
+            // 
+            this.dtpDueDate.Location = new System.Drawing.Point(229, 274);
+            this.dtpDueDate.Name = "dtpDueDate";
+            this.dtpDueDate.Size = new System.Drawing.Size(192, 22);
+            this.dtpDueDate.TabIndex = 6;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(226, 255);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(122, 16);
+            this.label12.TabIndex = 7;
+            this.label12.Text = "Срок выполнения";
+            // 
+            // btnAddTask
+            // 
+            this.btnAddTask.Location = new System.Drawing.Point(9, 319);
+            this.btnAddTask.Name = "btnAddTask";
+            this.btnAddTask.Size = new System.Drawing.Size(92, 34);
+            this.btnAddTask.TabIndex = 8;
+            this.btnAddTask.Text = "Добавить";
+            this.btnAddTask.UseVisualStyleBackColor = true;
+            // 
+            // btnEditTask
+            // 
+            this.btnEditTask.Location = new System.Drawing.Point(118, 319);
+            this.btnEditTask.Name = "btnEditTask";
+            this.btnEditTask.Size = new System.Drawing.Size(92, 34);
+            this.btnEditTask.TabIndex = 9;
+            this.btnEditTask.Text = "Изменить";
+            this.btnEditTask.UseVisualStyleBackColor = true;
+            // 
+            // btnDeleteTask
+            // 
+            this.btnDeleteTask.Location = new System.Drawing.Point(65, 359);
+            this.btnDeleteTask.Name = "btnDeleteTask";
+            this.btnDeleteTask.Size = new System.Drawing.Size(92, 34);
+            this.btnDeleteTask.TabIndex = 10;
+            this.btnDeleteTask.Text = "Удалить";
+            this.btnDeleteTask.UseVisualStyleBackColor = true;
+            // 
+            // dataGridTasks
+            // 
+            this.dataGridTasks.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridTasks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridTasks.Location = new System.Drawing.Point(437, 58);
+            this.dataGridTasks.Name = "dataGridTasks";
+            this.dataGridTasks.RowHeadersWidth = 51;
+            this.dataGridTasks.RowTemplate.Height = 24;
+            this.dataGridTasks.Size = new System.Drawing.Size(659, 450);
+            this.dataGridTasks.TabIndex = 11;
+            // 
+            // txtSearchTask
+            // 
+            this.txtSearchTask.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearchTask.Location = new System.Drawing.Point(437, 22);
+            this.txtSearchTask.Multiline = true;
+            this.txtSearchTask.Name = "txtSearchTask";
+            this.txtSearchTask.Size = new System.Drawing.Size(561, 33);
+            this.txtSearchTask.TabIndex = 12;
+            // 
+            // btnSearchTask
+            // 
+            this.btnSearchTask.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSearchTask.Location = new System.Drawing.Point(1004, 22);
+            this.btnSearchTask.Name = "btnSearchTask";
+            this.btnSearchTask.Size = new System.Drawing.Size(92, 34);
+            this.btnSearchTask.TabIndex = 13;
+            this.btnSearchTask.Text = "Поиск";
+            this.btnSearchTask.UseVisualStyleBackColor = true;
+            // 
+            // calendarTask
+            // 
+            this.calendarTask.Location = new System.Drawing.Point(229, 301);
+            this.calendarTask.Name = "calendarTask";
+            this.calendarTask.TabIndex = 14;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1164, 545);
+            this.ClientSize = new System.Drawing.Size(1112, 545);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "OfficeMateApp";
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.tabContact.ResumeLayout(false);
+            this.tabContact.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridContacts)).EndInit();
+            this.tabTask.ResumeLayout(false);
+            this.tabTask.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridTasks)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -351,8 +523,8 @@
         #endregion
 
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabContact;
+        private System.Windows.Forms.TabPage tabTask;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.Label label1;
@@ -377,6 +549,21 @@
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.MaskedTextBox txtPhonePersonal;
         private System.Windows.Forms.MaskedTextBox txtPhoneInternal;
+        private System.Windows.Forms.TextBox txtTaskTitle;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtTaskDescription;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox cmbTaskStatus;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DateTimePicker dtpDueDate;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button btnEditTask;
+        private System.Windows.Forms.Button btnAddTask;
+        private System.Windows.Forms.Button btnDeleteTask;
+        private System.Windows.Forms.DataGridView dataGridTasks;
+        private System.Windows.Forms.TextBox txtSearchTask;
+        private System.Windows.Forms.Button btnSearchTask;
+        private System.Windows.Forms.MonthCalendar calendarTask;
     }
 }
 
